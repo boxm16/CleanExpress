@@ -1,0 +1,171 @@
+object D_TimologisiForm: TD_TimologisiForm
+  Left = 169
+  Top = 29
+  Width = 843
+  Height = 499
+  Caption = 'D_TimologisiForm'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object D_Xrostaei: TComboBox
+    Left = 720
+    Top = 32
+    Width = 89
+    Height = 145
+    Style = csSimple
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ItemHeight = 20
+    ParentFont = False
+    Sorted = True
+    TabOrder = 0
+    Text = 'D_Xrostaei'
+    OnDblClick = D_XrostaeiDblClick
+    OnSelect = D_XrostaeiSelect
+  end
+  object SAVE_D_Xrostaei: TButton
+    Left = 720
+    Top = 0
+    Width = 115
+    Height = 25
+    Caption = 'SAVE_D_Xrostaei'
+    TabOrder = 1
+    OnClick = SAVE_D_XrostaeiClick
+  end
+  object LOAD: TButton
+    Left = 0
+    Top = 184
+    Width = 75
+    Height = 25
+    Caption = 'LOAD'
+    TabOrder = 2
+    OnClick = LOADClick
+  end
+  object D_Timologio: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 721
+    Height = 177
+    ColCount = 8
+    FixedCols = 0
+    RowCount = 3
+    FixedRows = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    ParentFont = False
+    TabOrder = 3
+    ColWidths = (
+      83
+      164
+      165
+      53
+      52
+      54
+      64
+      64)
+  end
+  object ADD_TO_TIMOLOGIO: TButton
+    Left = 688
+    Top = 176
+    Width = 123
+    Height = 25
+    Caption = 'ADD_TO_TIMOLOGIO'
+    TabOrder = 4
+    OnClick = ADD_TO_TIMOLOGIOClick
+  end
+  object YPOLOGISMOS: TButton
+    Left = 520
+    Top = 176
+    Width = 91
+    Height = 25
+    Caption = 'YPOLOGISMOS'
+    TabOrder = 5
+    OnClick = YPOLOGISMOSClick
+  end
+  object D_MONTH: TStringGrid
+    Left = 0
+    Top = 240
+    Width = 721
+    Height = 201
+    ColCount = 8
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 6
+    ColWidths = (
+      77
+      173
+      164
+      57
+      55
+      53
+      58
+      64)
+  end
+  object PutInMonth: TButton
+    Left = 728
+    Top = 280
+    Width = 75
+    Height = 41
+    Caption = 'PutInMonth'
+    TabOrder = 7
+    OnClick = PutInMonthClick
+  end
+  object D_TIM: TEdit
+    Left = 88
+    Top = 24
+    Width = 161
+    Height = 21
+    TabOrder = 8
+    Text = 'TIM-'
+  end
+  object D_TIM_NO: TEdit
+    Left = 88
+    Top = 0
+    Width = 161
+    Height = 21
+    TabOrder = 9
+    Text = '0'
+  end
+  object SaveDMonth: TButton
+    Left = 728
+    Top = 360
+    Width = 75
+    Height = 49
+    Caption = 'SaveDMonth'
+    TabOrder = 10
+    OnClick = SaveDMonthClick
+  end
+  object EXCEL: TButton
+    Left = 728
+    Top = 440
+    Width = 75
+    Height = 25
+    Caption = 'EXCEL'
+    TabOrder = 11
+    OnClick = EXCELClick
+  end
+  object NewMonth: TButton
+    Left = 728
+    Top = 224
+    Width = 75
+    Height = 25
+    Caption = 'NewMonth'
+    TabOrder = 12
+    OnClick = NewMonthClick
+  end
+end
